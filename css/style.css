@@ -29,12 +29,23 @@ body {
 .display {
     display: flex;
     grid-column: span 5;
-    height: 4rem;
+    height: 3rem;
     background-color: #333;
     padding: .5rem 1rem;
     justify-content: flex-end;
     align-items: flex-end;
     font-size: 1.85rem;
+}
+
+.sub-display {
+    display: flex;
+    grid-column: span 5;
+    height: 1.5rem;
+    background-color: #333;
+    padding: .5rem 1rem 0;
+    justify-content: flex-end;
+    align-items: flex-end;
+    font-size: .85rem;
 }
 
 .btn {
