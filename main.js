@@ -73,6 +73,16 @@ operationButtons.forEach(function (button) {
 equalsButton.addEventListener("click", function (e) {
   console.log("You clicked the equals button");
   display.textContent = operate(operators[0], nums[0], nums[1]);
+  if (nums.length > 0 && operators.length > 1) {
+    let temp = display.textContent;
+    console.log(temp);
+    nums.pop();
+    nums.pop();
+    operators = [];
+    subDisplay.textContent = nums;
+  } else {
+    display.textContent = "0";
+  }
 });
 // Event listener for the backspace button
 backspaceButton.addEventListener("click", function (e) {
